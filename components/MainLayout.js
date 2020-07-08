@@ -1,8 +1,12 @@
 import Link from 'next/link'
+import Head from 'next/head'
 
-export function MainLayout({ children }) {
+export function MainLayout({ children, title = 'Next App' }) {
     return (
         <>
+            <Head>
+                <title>{title} | Next Course</title>
+            </Head>
             <nav>
                 <Link className="nav-link" href="/"><a>Home</a></Link>
                 <Link className="nav-link" href="/about"><a>About</a></Link>

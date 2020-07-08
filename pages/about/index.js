@@ -8,7 +8,7 @@ export default function About() {
     }
 
     return (
-      <MainLayout>
+      <MainLayout title="About Page">
         <h1>About Page</h1>
         <button onClick={onClickLinkHandler}>Go Back</button>
         <button onClick={() => Router.push('/posts')}>Go To Posts</button>
